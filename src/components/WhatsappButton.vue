@@ -10,5 +10,5 @@
 </template>
 
 <script setup>
-const waLink = "https://wa.me/628123456789"
+const waLink = "https://wa.me/6281333537681"
 </script>

@@ -15,9 +15,11 @@
           <!-- LOGO -->
           <div class="flex items-center gap-3 mb-5">
             <div>
-              <h2 class="text-white font-bold text-xl">
-                Offset Market
-              </h2>
+              <img
+                :src="footerlogo"
+                alt="Offset Market"
+                class="h-20 w-auto object-contain items-center border-radius rounded-lg"
+              />
             </div>
 
           </div>
@@ -173,7 +175,7 @@
       <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
 
         <p class="text-gray-500 text-sm text-center md:text-left">
-          © 2026 Offset Market. All rights reserved.
+          © 2026 Aprinta Offset Market. All rights reserved.
         </p>
 
         
@@ -184,3 +186,7 @@
 
   </footer>
 </template>
+
+<script setup>
+import footerlogo from "../assets/footerlogo.png";
+</script>

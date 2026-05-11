@@ -3,12 +3,12 @@
         ? 'bg-white/90 backdrop-blur-xl shadow-lg border-b border-gray-200'
         : 'bg-white/70 backdrop-blur-md']">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <router-link to="/" class="flex items-center gap-3">
-        <div class="leading-tight">
-          <h1 class="font-bold text-gray-900 text-lg">
-            Offset Market
-          </h1>
-        </div>
+      <router-link to="/" class="flex items-center">
+        <img
+          :src="logo"
+          alt="Offset Market"
+          class="h-20 w-auto object-contain items-center"
+        />
       </router-link>
 
       <!-- DESKTOP MENU -->
@@ -96,6 +96,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import logo from "../assets/logo.png";
 
 const scrolled = ref(false);
 const mobileMenu = ref(false);
