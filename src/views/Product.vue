@@ -44,23 +44,19 @@
 
       <!-- GRID -->
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
         <ProductCard
           v-for="item in filteredProducts"
           :key="item.id"
           :product="item"
         />
-
       </div>
 
       <!-- EMPTY -->
       <div
         v-if="filteredProducts.length === 0"
-        class="text-center py-20 text-gray-500"
-      >
+        class="text-center py-20 text-gray-500">
         Produk tidak ditemukan.
       </div>
-
     </section>
 
   </div>
@@ -74,8 +70,20 @@ import ProductCard from '../components/ProductCard.vue'
 const search = ref('')
 
 const filteredProducts = computed(() => {
-  return products.filter(product =>
-    product.name.toLowerCase().includes(search.value.toLowerCase())
-  )
+
+  const statusPriority = {
+    hot: 1,
+    ready: 2,
+    sold: 3
+  }
+
+  return products
+    .filter(product =>
+      product.name.toLowerCase().includes(search.value.toLowerCase())
+    )
+    .sort((a, b) => {
+      return statusPriority[a.stockStatus] - statusPriority[b.stockStatus]
+    })
+
 })
 </script>

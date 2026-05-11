@@ -118,24 +118,33 @@
           :item="t"
         />
       </div>
-
     </section>
 
     <!-- PRODUCT LIST -->
     <section id="produk" class="max-w-6xl mx-auto px-6 pb-16">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-900">
+          Produk Tersedia
+        </h2>
+      </div>
 
-      <h2 class="text-2xl font-bold mb-8">
-        Produk Tersedia
-      </h2>
-
+      <!-- PRODUCT GRID -->
       <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
         <ProductCard
-          v-for="item in products"
+          v-for="item in sortedProducts.slice(0, 3)"
           :key="item.id"
           :product="item"
         />
       </div>
 
+      <!-- BUTTON -->
+      <div class="mt-12 flex justify-center">
+        <router-link
+          to="/product" class="inline-flex items-center gap-3 bg-black text-white px-7 py-3 rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-xl hover:scale-105">
+          Muat Lebih Banyak
+          <span class="text-lg">→</span>
+        </router-link>
+      </div>
     </section>
 
   </div>
@@ -172,5 +181,19 @@ onMounted(() => {
 
 onUnmounted(() => {
   clearInterval(interval)
+})
+
+import { computed } from 'vue'
+
+const sortedProducts = computed(() => {
+  const statusPriority = {
+    hot: 1,
+    ready: 2,
+    sold: 3
+  }
+
+  return [...products].sort((a, b) => {
+    return statusPriority[a.stockStatus] - statusPriority[b.stockStatus]
+  })
 })
 </script>
