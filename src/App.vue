@@ -1,5 +1,5 @@
 <template>
-  <analytics />
+  <Analytics />
   <Navbar />
   <main class="pt-20">
     <router-view />
