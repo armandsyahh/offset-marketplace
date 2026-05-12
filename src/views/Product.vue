@@ -70,7 +70,6 @@ import ProductCard from '../components/ProductCard.vue'
 const search = ref('')
 
 const filteredProducts = computed(() => {
-
   const statusPriority = {
     hot: 1,
     ready: 2,
@@ -84,6 +83,11 @@ const filteredProducts = computed(() => {
     .sort((a, b) => {
       return statusPriority[a.stockStatus] - statusPriority[b.stockStatus]
     })
-
 })
+
+const createSlug = (product) => {
+  return `${product.id}-${product.name
+    .toLowerCase()
+    .replace(/\s+/g, '-')}`
+}
 </script>
