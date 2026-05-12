@@ -17,7 +17,7 @@
             <div>
               <img
                 :src="footerlogo"
-                alt="Offset Market"
+                alt="Aprinta Offset Market Logo"
                 class="h-20 w-auto object-contain items-center border-radius rounded-lg"
               />
             </div>

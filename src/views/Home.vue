@@ -31,6 +31,7 @@
             <img
               :key="carouselImages[currentImage]"
               :src="carouselImages[currentImage]"
+              :alt="`Mesin Offset carousel image ${currentImage + 1}`"
               class="absolute inset-0 rounded-2xl shadow-2xl h-full w-full object-cover"
             />
           </transition>
@@ -43,7 +44,7 @@
     <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
       <!-- IMAGE -->
       <div class="relative animate-fade-in">
-        <img :src="IMG_2242" class="rounded-2xl shadow-2xl object-cover "/>
+        <img :src="IMG_2242" :alt="`Gambar tentang kami`" class="rounded-2xl shadow-2xl object-cover "/>
       </div>
       <!-- TEXT -->
       <div class="animate-fade-up">
@@ -196,4 +197,10 @@ const sortedProducts = computed(() => {
     return statusPriority[a.stockStatus] - statusPriority[b.stockStatus]
   })
 })
+
+const createSlug = (product) => {
+  return `${product.id}-${product.name
+    .toLowerCase()
+    .replace(/\s+/g, '-')}`
+}
 </script>

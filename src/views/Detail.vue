@@ -19,6 +19,7 @@
           <img
             v-if="selectedMedia.type === 'image'"
             :src="selectedMedia.url"
+            :alt="product.name"
             @click="showLightbox = true"
             class="max-w-full max-h-full object-contain p-3 md:p-6 cursor-zoom-in"
           />
@@ -237,8 +238,9 @@ import { products } from '../data/products'
 
 const route = useRoute()
 
+const productId = route.params.slug.split('-')[0]
 const product = products.find(
-  p => p.id == route.params.id
+  p => p.id == productId
 )
 
 const currentIndex = ref(0)

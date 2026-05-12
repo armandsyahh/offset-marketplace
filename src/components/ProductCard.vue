@@ -1,6 +1,6 @@
 <template>
   <router-link
-    :to="'/product/' + product.id"
+    :to="`/product/${product.id}-${product.name.toLowerCase().replace(/\s+/g, '-')}`"
     class="block"
   >
     <!-- <div class="bg-white rounded-2xl relative overflow-hidden shadow-sm hover:shadow-2xl transition duration-300 group cursor-pointer"> -->
@@ -34,6 +34,7 @@
       <div class="overflow-hidden">
         <img
           :src="product.images?.[0] || product.image"
+          :alt="product.name"
           class="w-full h-80 object-cover group-hover:scale-105 transition duration-500"
         />
       </div>
@@ -70,5 +71,11 @@ defineProps(['product'])
 
 const formatPrice = (price) => {
   return price.toLocaleString('id-ID')
+}
+
+const createSlug = (product) => {
+  return `${product.id}-${product.name
+    .toLowerCase()
+    .replace(/\s+/g, '-')}`
 }
 </script>
