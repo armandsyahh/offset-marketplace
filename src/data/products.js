@@ -51,7 +51,7 @@ export const products = [
       kondisi: "Siap Pakai",
       listrik: "4,05 kW",
       speed: "4300-12000 lembar/jam",
-      lokasi: "Jakarta"},
+      lokasi: "Surabaya"},
     stockStatus: "hot"
   },
   {

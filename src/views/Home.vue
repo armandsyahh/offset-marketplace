@@ -78,18 +78,18 @@
       <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
 
         <div>
-          <h3 class="text-2xl font-bold text-gray-900">20+</h3>
+          <h3 class="text-2xl font-bold text-gray-900">100+</h3>
           <p class="text-gray-500 text-sm">Mesin Terjual</p>
         </div>
 
         <div>
-          <h3 class="text-2xl font-bold text-gray-900">10+</h3>
+          <h3 class="text-2xl font-bold text-gray-900">20</h3>
           <p class="text-gray-500 text-sm">Tahun Pengalaman</p>
         </div>
 
         <div>
-          <h3 class="text-2xl font-bold text-gray-900">100%</h3>
-          <p class="text-gray-500 text-sm">Siap Produksi</p>
+          <h3 class="text-2xl font-bold text-gray-900">99.9%</h3>
+          <p class="text-gray-500 text-sm">Siap Pakai</p>
         </div>
 
         <div>

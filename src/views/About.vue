@@ -3,7 +3,7 @@
 
     <div class="animate-fade-up">
       <h1 class="text-4xl font-bold mb-6 text-gray-900">
-        About Us
+        Tentang Kami
       </h1>
 
       <p class="text-gray-600 leading-relaxed mb-6">
