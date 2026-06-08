@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://aprinta.vercel.app/</loc>
+  </url>
+
+  <url>
+    <loc>https://aprinta.vercel.app/product</loc>
+  </url>
+
+  <url>
+    <loc>https://aprinta.vercel.app/about</loc>
+  </url>
+
+  <url>
+    <loc>https://aprinta.vercel.app/product/1-oliver-52</loc>
+  </url>
+
+  <url>
+    <loc>https://aprinta.vercel.app/product/2-oliver-58</loc>
+  </url>
+
+  <url>
+    <loc>https://aprinta.vercel.app/product/3-oliver-272</loc>
+  </url>
+
+</urlset>
