@@ -11,7 +11,7 @@
       <div>
 
         <!-- MAIN MEDIA -->
-        <div
+        <div :key="selectedMedia.url"
           class="bg-gradient-to-br from-gray-900 to-black rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-gray-800 w-full aspect-[4/3] flex items-center justify-center"
         >
 
@@ -235,6 +235,7 @@
 import { computed, ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { products } from '../data/products'
+import { useHead } from '@vueuse/head'
 
 const route = useRoute()
 
@@ -248,12 +249,12 @@ const showLightbox = ref(false)
 
 const mediaItems = computed(() => {
   return [
-    ...product.images.map(img => ({
+    ...(product.images || []).map(img => ({
       type: 'image',
       url: img
     })),
 
-    ...product.video.map(video => ({
+    ...(product.video || []).map(video => ({
       type: 'video',
       url: video
     }))
@@ -299,6 +300,16 @@ onUnmounted(() => {
 const formatPrice = (price) => {
   return price.toLocaleString('id-ID')
 }
+
+useHead({
+  title: `${product.name} | Offset Market`,
+  meta: [
+    {
+      name: 'description',
+      content: product.description
+    }
+  ]
+})
 
 const waLink =
   `https://wa.me/628123456789?text=Halo, saya tertarik dengan ${product.name}. bisakah saya mendapatkan informasi lebih lanjut?`

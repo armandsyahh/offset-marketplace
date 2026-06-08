@@ -27,7 +27,7 @@
           <p class="text-gray-400 text-sm leading-relaxed">
             Menyediakan mesin percetakan berkualitas,
             siap produksi, terpercaya, dan cocok untuk
-            kebutuhan bisnis printing profesional.
+            kebutuhan offset profesional.
           </p>
 
         </div>

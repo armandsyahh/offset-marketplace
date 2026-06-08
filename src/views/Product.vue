@@ -66,6 +66,7 @@
 import { ref, computed } from 'vue'
 import { products } from '../data/products'
 import ProductCard from '../components/ProductCard.vue'
+import { useHead } from '@vueuse/head'
 
 const search = ref('')
 
@@ -90,4 +91,14 @@ const createSlug = (product) => {
     .toLowerCase()
     .replace(/\s+/g, '-')}`
 }
+
+useHead({
+  title: 'Semua Produk | Offset Market',
+  meta: [
+    {
+      name: 'description',
+      content: 'Daftar mesin offset bekas berkualitas yang tersedia di Offset Market.'
+    }
+  ]
+})
 </script>

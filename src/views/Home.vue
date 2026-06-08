@@ -147,7 +147,7 @@
         </router-link>
       </div>
     </section>
-
+    
   </div>
 </template>
 
@@ -157,6 +157,7 @@ import ProductCard from '../components/ProductCard.vue'
 import TestimonialCard from '../components/TestimonialCard.vue'
 import { testimonials } from '../data/testimonials';
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useHead } from '@vueuse/head'
 
 import IMG_2242 from '../assets/IMG_2242.jpg'
 import carousel1 from '../assets/carousel1.jpg' 
@@ -203,4 +204,15 @@ const createSlug = (product) => {
     .toLowerCase()
     .replace(/\s+/g, '-')}`
 }
+
+useHead({
+  title: 'Offset Market | Jual Beli Mesin Offset Bekas Berkualitas',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Jual beli mesin offset bekas berkualitas. Tersedia Oliver 272, Oliver 58, Heidelberg dan berbagai mesin percetakan lainnya.'
+    }
+  ]
+})
 </script>

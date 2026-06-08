@@ -27,11 +27,11 @@ export const products = [
     video: [vid272_1],
     description: "Mesin offset Oliver 52 kondisi siap pakai, hasil cetak tajam, cocok untuk percetakan skala menengah.",
     specifications: {
-      ukuran : "520 x 365 mm",
+      ukuran : "520 x 360 mm",
       warna: "1 Warna",
       tahun: "1987",
       kondisi: "Siap Pakai",
-      listrik: "3,5 kW",
+      listrik: "~3,5 kW",
       speed: "4000-12000 lembar/jam",
       lokasi: "Surabaya"},
     stockStatus: "hot"
@@ -45,11 +45,11 @@ export const products = [
     video: [vid272_1],
     description: "Ukuran lebih besar, performa stabil, cocok untuk produksi lebih tinggi.",
     specifications: {
-      ukuran: "580 x 400 mm",
+      ukuran: "580 x 440 mm",
       warna: "1 Warna",
       tahun: "1984",
       kondisi: "Siap Pakai",
-      listrik: "4,05 kW",
+      listrik: "~4,05 kW",
       speed: "4300-12000 lembar/jam",
       lokasi: "Surabaya"},
     stockStatus: "hot"
@@ -67,7 +67,7 @@ export const products = [
       warna: "2 Warna",
       tahun: "1988",
       kondisi: "Siap Pakai",
-      listrik: "Normal",
+      listrik: "~12,8 kW",
       speed: "4000-12000 lembar/jam",
       lokasi: "Surabaya"},
     stockStatus: "ready"

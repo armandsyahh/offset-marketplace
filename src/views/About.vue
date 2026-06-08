@@ -81,3 +81,17 @@
 
   </div>
 </template>
+
+<script>
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Tentang Kami | Offset Market',
+  meta: [
+    {
+      name: 'description',
+      content: 'Pelajari lebih lanjut tentang Offset Market dan misi kami dalam menyediakan mesin offset bekas berkualitas.'
+    }
+  ]
+})
+</script>
