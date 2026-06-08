@@ -67,6 +67,7 @@ import { ref, computed } from 'vue'
 import { products } from '../data/products'
 import ProductCard from '../components/ProductCard.vue'
 import { useHead } from '@vueuse/head'
+import { createSlug } from '../utils/slug'
 
 const search = ref('')
 
@@ -86,18 +87,12 @@ const filteredProducts = computed(() => {
     })
 })
 
-const createSlug = (product) => {
-  return `${product.id}-${product.name
-    .toLowerCase()
-    .replace(/\s+/g, '-')}`
-}
-
 useHead({
-  title: 'Semua Produk | Offset Market',
+  title: 'Semua Produk | Offset Machinery Market',
   meta: [
     {
       name: 'description',
-      content: 'Daftar mesin offset bekas berkualitas yang tersedia di Offset Market.'
+      content: 'Daftar mesin offset bekas berkualitas yang tersedia di Aprinta Offset Machinery Market.'
     }
   ]
 })

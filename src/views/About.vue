@@ -86,11 +86,11 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Tentang Kami | Offset Market',
+  title: 'Tentang Kami | Offset Machinery Market',
   meta: [
     {
       name: 'description',
-      content: 'Pelajari lebih lanjut tentang Offset Market dan misi kami dalam menyediakan mesin offset bekas berkualitas.'
+      content: 'Pelajari lebih lanjut tentang Aprinta Offset Machinery Market.'
     }
   ]
 })

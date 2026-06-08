@@ -302,11 +302,31 @@ const formatPrice = (price) => {
 }
 
 useHead({
-  title: `${product.name} | Offset Market`,
+  title: `${product.name} | Offset Machinery Market`,
   meta: [
     {
       name: 'description',
       content: product.description
+    },
+
+    {
+      property: 'og:title',
+      content: `${product.name} | Offset Machinery Market`
+    },
+
+    {
+      property: 'og:description',
+      content: product.description
+    },
+
+    {
+      property: 'og:image',
+      content: product.images[0]
+    },
+
+    {
+      property: 'og:type',
+      content: 'product'
     }
   ]
 })

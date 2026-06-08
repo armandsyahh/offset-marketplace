@@ -17,7 +17,7 @@
             <div>
               <img
                 :src="footerlogo"
-                alt="Aprinta Offset Market Logo"
+                alt="Aprinta Offset Machinery Market Logo"
                 class="h-20 w-auto object-contain items-center border-radius rounded-lg"
               />
             </div>
@@ -175,7 +175,7 @@
       <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
 
         <p class="text-gray-500 text-sm text-center md:text-left">
-          © 2026 Aprinta Offset Market. All rights reserved.
+          © 2026 Aprinta Offset Machinery Market. All rights reserved.
         </p>
 
         

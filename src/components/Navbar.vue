@@ -6,7 +6,7 @@
       <router-link to="/" class="flex items-center">
         <img
           :src="logo"
-          alt="Aprinta Offset Market Logo"
+          alt="Aprinta Offset Machinery Market Logo"
           class="h-20 w-auto object-contain items-center"
         />
       </router-link>

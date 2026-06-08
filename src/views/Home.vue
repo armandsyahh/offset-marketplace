@@ -206,7 +206,7 @@ const createSlug = (product) => {
 }
 
 useHead({
-  title: 'Offset Market | Jual Beli Mesin Offset Bekas Berkualitas',
+  title: 'Offset Machinery Market | Jual Beli Mesin Offset Bekas Berkualitas',
   meta: [
     {
       name: 'description',
